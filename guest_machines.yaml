@@ -1,0 +1,13 @@
+- name: jenkins
+  box: centos/7
+  cpus: 1
+  memory: 2048 
+  private_ip: 10.0.10.10
+  scripts:
+  - terraform.bash
+  packages: 
+  - wget
+  - unzip
+  - git
+  - vim
+  package_manager: yum
